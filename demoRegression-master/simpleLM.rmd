@@ -50,5 +50,26 @@ Based on the comparison of the two models we can say that this model, the MYCHES
 
 
 
+```{r}
+MYHEADW <- lm(LENGTH~HEADWTH,data=bears)
+plot(LENGTH~HEADWTH,data=bears)
+abline(MYHEADW)
+summary.lm(MYHEADW)
+```
+
+Using this model, MYHEADW compared to the other model is not as helpfull as the other two in comparison have a smaller Residual standard error and a smaller Adjusted R-squared, as the standard error is of 7.32 and the R-squared is 0.5321 which will allows us to conclude that this model is not as helpful as it wouldnt narrow down on the information more, it would simply make the spread bigger.
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
