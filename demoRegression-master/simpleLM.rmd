@@ -34,3 +34,21 @@ predict(simp,new,se.fit=TRUE)
 ```
 ## Surely there is another variable that can better predict LENGTH than NECK. Find one and compare its performance to that of neck by it value of Adjusted-Rsquared (bigger is better).
 
+I will atempt to find a better model that includes the length of the bear, based on the chest size
+
+
+```{r}
+MYCHEST <- lm(LENGTH~CHEST,data=bears)
+plot(LENGTH~CHEST,data=bears)
+abline(MYCHEST)
+summary.lm(MYCHEST)
+```
+
+Based on the comparison of the two models we can say that this model, the MYCHEST model would be more appropriate compaared to the simp model as there was a significant change in the number of the standard error which has gone down and the number for the adjusted R-squared which has gone up as with this model we compare the chest. The number was 4.939 for the standard error and the number for the adjusted R-squared was 0,747 on the other graph. As the adjusted R explains more of the error and the residual standard square is smaller.
+
+
+
+
+
+
+
