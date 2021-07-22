@@ -62,9 +62,14 @@ Using this model, MYHEADW compared to the other model is not as helpfull as the 
 
 
 
+```{r}
+MYHEADLEN <- lm(LENGTH~HEADLEN,data=bears)
+plot(LENGTH~HEADLEN,data=bears)
+abline(MYHEADLEN)
+summary.lm(MYHEADLEN)
+```
 
-
-
+This is the MTHEADLEN graph and by far out of the three the most important to us as it gives us the most accurate structure that we were looking for, shure if we try every numerical variable we will eventually find a better grapgh and solution as the limit of possibilities will allow us that, but for now we will be morally satisfied with this graph as the Residual standard error stands at 4.235 and the Adjusted R-Squared stands at 0.8434 which  of them give us the lowest prercentage on the standard error and the highest upon the value concerning the adjusted R-squared.
 
 
 
